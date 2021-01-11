@@ -12,4 +12,12 @@
 
 Now we have de binnary of our source code in our system so we can call  `go-idiomatic-001` to execute it
 
-- It then installs that binary as $HOME/go/bin/hello (or, under Windows, %USERPROFILE%\go\bin\hello.exe)
+- It then installs that binary as $HOME/go/bin/hello (or, under Windows, %USERPROFILE%\go\bin\hello.exe) and all the other modules needed it
+
+### Cleanup the modules instaled in cache
+
+- go clean -modcache
+
+### test all subdirectories folders
+
+- go test ./...
